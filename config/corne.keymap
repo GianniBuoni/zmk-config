@@ -17,19 +17,19 @@
 
         numerical {
             bindings = <
-&kp GRAVE  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3    &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N1     &kp N2    &kp N3  &kp N0    &kp SEMI
-&kp ESC    &none           &none         &none         &none           &none           &mt RIGHT_BRACE LEFT_BRACE              &kp N4     &kp N5    &kp N6  &kp BSPC  &kp SQT
-&kp LSHFT  &none           &none         &none         &none           &none           &mt RIGHT_BRACKET LEFT_BRACKET          &kp N7     &kp N8    &kp N9  &kp FSLH  &kp RSHFT
-                                         &lt 1 LALT    &lt 2 LEFT_GUI  &kp SPACE       &kp RET                                 &kp RCTRL  &kp RALT
+&kp TAB    &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL    &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N1     &kp N2    &kp N3  &kp N0    &kp SEMI
+&kp ESC    &kp KP_SUBTRACT  &kp KP_PLUS   &kp KP_EQUAL  &kp COLON       &kp TILDE         &mt RIGHT_BRACE LEFT_BRACE              &kp N4     &kp N5    &kp N6  &kp BSPC  &kp SQT
+&kp LSHFT  &none            &none         &none         &none           &kp GRAVE         &mt RIGHT_BRACKET LEFT_BRACKET          &kp N7     &kp N8    &kp N9  &kp FSLH  &kp RSHFT
+                                          &lt 1 LALT    &lt 2 LEFT_GUI  &kp SPACE         &kp RET                                 &kp RCTRL  &kp RALT
             >;
         };
 
-        directional {
+        vim {
             bindings = <
-&none  &none  &none  &none       &none           &none        &none     &none      &none     &none      &none  &none
-&none  &none  &none  &none       &none           &none        &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &none  &none
-&none  &none  &none  &none       &none           &none        &none     &none      &none     &none      &none  &none
-                     &lt 1 LALT  &lt 2 LEFT_GUI  &kp SPACE    &kp RET   &kp RCTRL  &kp RALT
+&kp TAB  &none  &none  &none       &none           &none        &none     &none      &none     &none      &none  &none
+&kp ESC  &none  &none  &mt Q W     &kp COLON       &none        &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &none  &none
+&none    &none  &none  &none       &none           &none        &none     &none      &none     &none      &none  &none
+                       &lt 1 LALT  &lt 2 LEFT_GUI  &kp SPACE    &kp RET   &kp RCTRL  &kp RALT
             >;
         };
     };
