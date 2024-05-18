@@ -24,12 +24,12 @@
             >;
         };
 
-        vim {
+        vim_tmux {
             bindings = <
-&kp TAB  &none  &none  &none       &none           &none        &none     &none      &none     &none      &none  &none
-&kp ESC  &none  &none  &mt Q W     &kp COLON       &none        &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &none  &none
-&none    &none  &none  &none       &none           &none        &none     &none      &none     &none      &none  &none
-                       &lt 1 LALT  &lt 2 LEFT_GUI  &kp SPACE    &kp RET   &kp RCTRL  &kp RALT
+&kp TAB  &none  &none         &none       &none           &none         &kp PERCENT  &kp DOUBLE_QUOTES  &none     &none      &none  &none
+&kp ESC  &none  &kp NUMBER_0  &mt Q W     &kp COLON       &kp DOLLAR    &kp LEFT     &kp DOWN           &kp UP    &kp RIGHT  &none  &none
+&none    &none  &none         &none       &none           &none         &none        &none              &none     &none      &none  &none
+                              &lt 1 LALT  &lt 2 LEFT_GUI  &kp SPACE     &kp RET      &kp RCTRL          &kp RALT
             >;
         };
     };
