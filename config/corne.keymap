@@ -3,7 +3,28 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    keymap {
+  behaviors {
+    td0: parens_dance {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp RIGHT_PARENTHESIS>, <&kp LEFT_PARENTHESIS>; 
+    };
+    td1: brace_dance {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp RIGHT_BRACE>, <&kp LEFT_BRACE>; 
+    };
+    td2: bracket_dance {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp RIGHT_BRACKET>, <&kp LEFT_BRACKET>; 
+    };
+  };
+
+  keymap {
         compatible = "zmk,keymap";
 
         base_layer {
@@ -11,25 +32,25 @@
 &kp TAB    &kp Q  &kp W  &kp E       &kp R           &kp T        &kp Y    &kp U      &kp I      &kp O    &kp P     &kp SEMI
 &kp ESC    &kp A  &kp S  &kp D       &kp F           &kp G        &kp H    &kp J      &kp K      &kp L    &kp BSPC  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C       &kp V           &kp B        &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &lt 1 LALT  &lt 2 LEFT_GUI  &kp SPACE    &kp RET  &kp RCTRL  &kp RALT
+                         &lt 2 LALT  &lt 1 LEFT_GUI  &kp SPACE    &kp RET  &kp RCTRL  &kp RALT
             >;
         };
 
-        numerical {
+        symbols {
             bindings = <
-&kp TAB    &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL    &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N1     &kp N2    &kp N3  &kp N0    &kp SEMI
-&kp ESC    &kp KP_SUBTRACT  &kp KP_PLUS   &kp KP_EQUAL  &kp COLON       &kp TILDE         &mt RIGHT_BRACE LEFT_BRACE              &kp N4     &kp N5    &kp N6  &kp BSPC  &kp SQT
-&kp LSHFT  &none            &none         &none         &none           &kp GRAVE         &mt RIGHT_BRACKET LEFT_BRACKET          &kp N7     &kp N8    &kp N9  &kp FSLH  &kp RSHFT
-                                          &lt 1 LALT    &lt 2 LEFT_GUI  &kp SPACE         &kp RET                                 &kp RCTRL  &kp RALT
+&kp TAB    &kp PRCNT      &kp AMPS      &kp QMARK     &kp COLON   &kp TILDE   &td0      &kp N1      &kp N2    &kp N3  &none     &kp SEMI
+&kp ESC    &kp KP_EQUAL   &kp KP_PLUS   &kp KP_MINUS  &kp N0      &kp DOLLAR  &td1      &kp N4      &kp N5    &kp N6  &kp BSPC  &kp SQT
+&kp LSHFT  &none          &none         &kp UNDER     &kp STAR    &kp GRAVE   &td2      &kp N7      &kp N8    &kp N9  &kp PIPE  &kp RSHFT
+                                        &lt 2 LALT    &lt 1       &kp SPACE   &kp RET   &kp RCTRL   &kp RALT
             >;
         };
 
-        vim_tmux {
+        misc {
             bindings = <
-&kp TAB  &none  &none         &none       &none           &none         &kp PERCENT  &kp DOUBLE_QUOTES  &none     &none      &none  &none
-&kp ESC  &none  &kp NUMBER_0  &mt Q W     &kp COLON       &kp DOLLAR    &kp LEFT     &kp DOWN           &kp UP    &kp RIGHT  &none  &none
-&none    &none  &none         &none       &none           &none         &none        &none              &none     &none      &none  &none
-                              &lt 1 LALT  &lt 2 LEFT_GUI  &kp SPACE     &kp RET      &kp RCTRL          &kp RALT
+&kp TAB     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL  &nonw     &none       &none     &none       &none   &none
+&kp ESC     &none         &none         &none         &none           &none           &kp LEFT  &kp UP      &kp DOWN  &kp RIGHT   &none   &none
+&kp LSHFT   &none         &none         &none         &none           &none           &none     &none       &none     &none       &none   &nonei
+                                        &lt 2         &lt 1 LEFT_GUI  &kp SPACE       &kp RET   &kp RCTRL   &kp RALT
             >;
         };
     };
