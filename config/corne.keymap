@@ -38,19 +38,19 @@
 
         symbols {
             bindings = <
-&kp TAB    &kp PRCNT      &kp AMPS      &kp QMARK     &kp COLON   &kp TILDE   &td0      &kp N1      &kp N2    &kp N3  &none     &kp SEMI
-&kp ESC    &kp KP_EQUAL   &kp KP_PLUS   &kp KP_MINUS  &kp N0      &kp DOLLAR  &td1      &kp N4      &kp N5    &kp N6  &kp BSPC  &kp SQT
-&kp LSHFT  &none          &none         &kp UNDER     &kp STAR    &kp GRAVE   &td2      &kp N7      &kp N8    &kp N9  &kp PIPE  &kp RSHFT
-                                        &lt 2 LALT    &lt 1       &kp SPACE   &kp RET   &kp RCTRL   &kp RALT
+&kp TAB    &kp PRCNT      &kp AMPS      &kp QMARK     &kp COLON       &kp TILDE   &td0      &kp N1      &kp N2    &kp N3  &none     &kp SEMI
+&kp ESC    &kp KP_EQUAL   &kp KP_PLUS   &kp KP_MINUS  &kp N0          &kp DOLLAR  &td1      &kp N4      &kp N5    &kp N6  &kp BSPC  &kp SQT
+&kp LSHFT  &none          &none         &kp UNDER     &kp STAR        &kp GRAVE   &td2      &kp N7      &kp N8    &kp N9  &kp PIPE  &kp RSHFT
+                                        &lt 2 LALT    &lt 1 LEFT_GUI  &kp SPACE   &kp RET   &kp RCTRL   &kp RALT
             >;
         };
 
         misc {
             bindings = <
-&kp TAB     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL  &nonw     &none       &none     &none       &none   &none
+&kp TAB     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL  &none     &none       &none     &none       &none   &none
 &kp ESC     &none         &none         &none         &none           &none           &kp LEFT  &kp UP      &kp DOWN  &kp RIGHT   &none   &none
-&kp LSHFT   &none         &none         &none         &none           &none           &none     &none       &none     &none       &none   &nonei
-                                        &lt 2         &lt 1 LEFT_GUI  &kp SPACE       &kp RET   &kp RCTRL   &kp RALT
+&kp LSHFT   &none         &none         &none         &none           &none           &none     &none       &none     &none       &none   &none
+                                        &lt 2 LALT    &lt 1 LEFT_GUI  &kp SPACE       &kp RET   &kp RCTRL   &kp RALT
             >;
         };
     };
