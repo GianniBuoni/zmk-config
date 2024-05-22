@@ -8,19 +8,19 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp RIGHT_PARENTHESIS>, <&kp LEFT_PARENTHESIS>; 
+      bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>; 
     };
     td1: brace_dance {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp RIGHT_BRACE>, <&kp LEFT_BRACE>; 
+      bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>; 
     };
     td2: bracket_dance {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp RIGHT_BRACKET>, <&kp LEFT_BRACKET>; 
+      bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>; 
     };
   };
 
