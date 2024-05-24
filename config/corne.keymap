@@ -77,8 +77,8 @@
 
         misc {
             bindings = <
-&kp TAB   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL  &kp F4    &kp F5      &kp F11   &kp f12     &none   &none
-&kp esc   &none         &none         &none         &none           &none           &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT   &none   &none
+&kp TAB   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL  &kp F4    &kp F5      &kp F11   &kp F12     &none   &none
+&kp ESC   &none         &none         &none         &none           &none           &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT   &none   &none
 &td3      &none         &none         &none         &none           &none           &none     &none       &none     &none       &none   &none
                         &kp LALT      &td6          &td4            &kp RET         &td7      &kp RALT
             >;
