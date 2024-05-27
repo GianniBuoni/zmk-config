@@ -3,72 +3,51 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-  behaviors {
-    td0: parens_dance {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>; 
+    behaviors {
+        td3: caps_lock {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHFT>, <&kp CAPS>;
+        };
     };
-    td1: brace_dance {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>; 
-    };
-    td2: bracket_dance {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>; 
-    };
-    td3: caps_lock {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp LSHFT>, <&kp CAPS>;
-    };
-    td5: quotes {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp SQT>, <&kp DQT>;
-    };
-    td6: layer1 {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&mo 1>, <&kp LEFT_GUI>;
-    };
-  };
 
-  keymap {
+    keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        default_layer {
             bindings = <
-&kp ESC   &kp Q  &kp W  &kp E       &kp R   &kp T       &kp Y    &kp U      &kp I      &kp O    &kp P     &kp SEMI
-&kp TAB   &kp A  &kp S  &kp D       &kp F   &kp G       &kp H    &kp J      &kp K      &kp L    &mo 2     &td5
-&td3      &kp Z  &kp X  &kp C       &kp V   &kp B       &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                        &kp LALT    &td6    &kp SPACE   &kp RET  &kp BSPC   &kp RCTL
+&none  &kp Q  &kp W       &kp E       &kp R        &kp T    &kp Y          &kp U        &kp I            &kp O         &kp P           &none
+&none  &kp A  &mt LGUI S  &mt LALT D  &mt LCTRL F  &kp G    &kp H          &mt RCTRL J  &mt RALT K       &mt RGUI L    &kp SEMI        &none
+&none  &kp Z  &kp X       &kp C       &kp V        &kp B    &kp N          &kp M        &mt MINUS COMMA  &mt EXCL DOT  &mt UNDER FSLH  &none
+                          &kp ESC     &kp SPACE    &td3     &kp BACKSPACE  &kp RETURN   &to 1
             >;
         };
 
         symbols {
             bindings = <
-&kp ESC   &kp PRCNT      &kp AMPS      &kp QMARK      &kp COLON   &kp AT      &td0      &kp N1      &kp N2    &kp N3  &kp TILDE   &kp SEMI
-&kp TAB   &kp KP_EQUAL   &kp KP_PLUS   &kp KP_MINUS   &kp N0      &kp DOLLAR  &td1      &kp N4      &kp N5    &kp N6  &mo 2       &td5
-&td3      &kp LT         &kp GT        &kp UNDER      &kp STAR    &kp GRAVE   &td2      &kp N7      &kp N8    &kp N9  &kp PIPE    &kp RSHFT
-                                       &kp LALT       &td6        &kp SPACE   &kp RET   &kp BSPC    &kp RCTL
+&none  &kp ESCAPE  &none             &none            &kp STAR      &kp HASH          &kp LT            &mt DQT SQT           &kp GRAVE             &kp GT             &kp CARET  &none
+&none  &kp TAB     &mt LGUI PERCENT  &mt LALT DOLLAR  &mt LCTRL N0  &kp KP_EQUAL      &kp BSLH          &mt RCTRL LEFT_BRACE  &mt RALT RIGHT_BRACE  &mt RGUI PIPE      &kp AMPS   &none
+&none  &kp TILDE   &none             &none            &none         &none             &kp LEFT_BRACKET  &kp LPAR              &kp RPAR              &kp RIGHT_BRACKET  &to 3      &none
+                                     &to 0            &kp SPACE     &kp LEFT_SHIFT    &kp BSPC          &kp RET               &to 2
+            >;
+        };
+
+        numpad {
+            bindings = <
+&none  &kp ESC  &none  &none  &none      &kp UNDER       &kp KP_MINUS  &kp N1   &kp N2  &kp N3  &none  &none
+&none  &kp TAB  &none  &none  &none      &kp KP_EQUAL    &kp KP_MINUS  &kp N4   &kp N5  &kp N6  &none  &none
+&none  &none    &none  &none  &none      &kp DOT         &kp N0        &kp N7   &kp N8  &kp N9  &none  &none
+                       &to 0  &kp SPACE  &kp LSHFT       &kp BSPC      &kp RET  &to 1
             >;
         };
 
         misc {
             bindings = <
-&kp ESC   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR_ALL  &kp F4      &kp F5      &kp F11   &kp F12     &none   &none
-&kp TAB   &none         &none         &none         &none           &none           &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT   &mo 2   &none
-&td3      &none         &none         &none         &none           &none           &none       &none       &none     &none       &none   &none
-                                      &kp LALT      &td6            &kp SPACE       &kp RET     &kp BSPC    &kp RCTL
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp F4    &kp F5    &kp F11  &kp F12    &none  &none
+&none  &none         &kp LGUI      &kp LALT      &kp LCTRL     &none             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &none  &none
+&none  &none         &none         &none         &none         &none             &none     &none     &none    &none      &none  &none
+                                   &to 0         &kp SPACE     &kp LEFT_SHIFT    &kp BSPC  &kp RET   &to 1
             >;
         };
     };
