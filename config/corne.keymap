@@ -31,9 +31,9 @@
 
         symbols {
             bindings = <
-&none  &kp ESCAPE  &none             &none        &kp STAR          &kp HASH        &kp LT            &mt DQT SQT           &kp GRAVE             &kp GT             &kp CARET  &none
-&none  &kp TAB     &mt LGUI PERCENT  &mt LALT N0  &mt LCTRL DOLLAR  &kp KP_EQUAL    &kp BSLH          &mt RCTRL LEFT_BRACE  &mt RALT RIGHT_BRACE  &mt RGUI PIPE      &kp AMPS   &none
-&none  &kp TILDE   &none             &none        &none             &none           &kp LEFT_BRACKET  &kp LPAR              &kp RPAR              &kp RIGHT_BRACKET  &to 3      &none
+&none  &kp ESCAPE  &none             &none        &kp STAR          &kp HASH        &kp LT            &mt DQT SQT           &kp GRAVE             &kp GT             &kp AMPS   &none
+&none  &kp TAB     &mt LGUI PERCENT  &mt LALT N0  &mt LCTRL DOLLAR  &kp KP_EQUAL    &kp BSLH          &mt RCTRL LEFT_BRACE  &mt RALT RIGHT_BRACE  &mt RGUI PIPE      &to 3      &none
+&none  &kp TILDE   &none             &none        &none             &none           &kp LEFT_BRACKET  &kp LPAR              &kp RPAR              &kp RIGHT_BRACKET  &kp CARET  &none
                                      &to 0        &kp LEFT_SHIFT    &kp SPACE       &kp RET           &kp BSPC              &to 2
             >;
         };
@@ -52,7 +52,7 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp F4    &kp F5    &kp F11  &kp F12    &none  &none
 &none  &none         &kp LGUI      &kp LALT      &kp LCTRL     &none             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &none  &none
 &none  &none         &none         &none         &none         &none             &none     &none     &none    &none      &none  &none
-                                   &to 0         &kp SPACE     &kp LEFT_SHIFT    &kp BSPC  &kp RET   &to 1
+                                   &to 0         &kp LSHIFT    &kp SPACE         &kp RET   &kp BSPC  &to 1
             >;
         };
     };
