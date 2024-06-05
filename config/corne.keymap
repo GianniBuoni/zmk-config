@@ -49,10 +49,10 @@
 
         misc {
             bindings = <
-&none  &kp Q  &kp W  &kp R  &kp J       &kp ESCAPE    &kp F2        &kp F4        &kp F5        &kp F11       &kp F12         &none
-&none  &kp A  &kp S  &kp D  &kp I       &kp TAB       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none           &none
-&none  &none  &none  &none  &kp M       &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL  &none
-                     &to 0  &kp LSHIFT  &kp SPACE     &kp RET       &kp BSPC      &to 1
+&none  &kp Q         &kp W         &kp E         &kp J       &kp ESCAPE        &kp DOWN  &kp RIGHT  &none   &none    &none    &none
+&none  &kp A         &kp S         &kp D         &kp I       &kp TAB           &kp F2    &kp F4     &kp F5  &kp F11  &kp F12  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp M       &bt BT_CLR_ALL    &kp UP    &kp LEFT   &none   &none    &none    &none
+                                   &to 0         &kp LSHIFT  &kp SPACE         &kp RET   &kp BSPC   &to 1
             >;
         };
     };
