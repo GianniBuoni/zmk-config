@@ -22,7 +22,7 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W       &kp F       &kp R           &kp B            &kp J    &kp L        &kp U           &kp Y           &kp SEMI                   &none
+&none  &kp Q  &kp W       &kp F       &kp P           &kp B            &kp J    &kp L        &kp U           &kp Y           &kp SEMI                   &none
 &none  &kp A  &mt LGUI R  &mt LALT S  &mt LCTRL T     &kp G            &kp M    &mt RCTRL N  &mt RALT E      &mt RGUI I      &kp O                      &none
 &none  &kp X  &kp C       &kp D       &kp V           &kp Z            &kp K    &kp H        &mt EXCL COMMA  &mt UNDER FSLH  &mt KP_MINUS SINGLE_QUOTE  &none
                           &kp ESC     &kp LEFT_SHIFT  &mt DOT SPACE    &kp RET  &kp BSPC     &to 1
