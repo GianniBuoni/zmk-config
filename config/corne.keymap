@@ -22,7 +22,7 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W       &kp F       &kp P           &kp B            &kp J    &kp L        &kp U           &kp Y           &kp SEMI  &none
+&none  &kp Q  &kp W       &kp F       &kp P           &kp B            &kp J    &kp L        &kp U           &kp Y           &kp SEMI                   &none
 &none  &kp A  &mt LGUI R  &mt LALT S  &mt LCTRL T     &kp G            &kp M    &mt RCTRL N  &mt RALT E      &mt RGUI I      &kp O                      &none
 &none  &kp X  &kp C       &kp D       &kp V           &kp Z            &kp K    &kp H        &mt EXCL COMMA  &mt UNDER FSLH  &mt KP_MINUS SINGLE_QUOTE  &none
                           &kp ESC     &kp LEFT_SHIFT  &mt DOT SPACE    &kp RET  &kp BSPC     &to 1
@@ -31,10 +31,10 @@
 
         symbols {
             bindings = <
-&none  &kp STAR   &kp HASH           &kp PERCENT  &kp DQT           &kp AT          &kp LT            &kp SQT   &kp GRAVE  &kp GT   &kp SEMI  &none
-&none  &kp TAB    &mt LGUI KP_MINUS  &mt LALT KP_PLUS  &mt LCTRL DOLLAR  &kp KP_EQUAL    &kp BSLH          &kp LBRC  &kp RBRC   &kp PIPE           &to 3      &none
-&none  &kp TILDE  &kp PIPE           &kp QMARK    &kp AMPS          &kp COLON       &kp LEFT_BRACKET  &kp LPAR  &kp RPAR   &kp RIGHT_BRACKET  &kp CARET  &none
-                                     &to 0        &kp LEFT_SHIFT    &kp SPACE       &kp RET           &kp BSPC  &to 2
+&none  &kp STAR   &kp HASH           &kp PERCENT        &kp DQT           &kp AT          &kp LT            &kp SQT   &kp GRAVE  &kp GT             &kp SEMI   &none
+&none  &kp TAB    &mt LGUI KP_MINUS  &mt LALT KP_PLUS   &mt LCTRL DOLLAR  &kp KP_EQUAL    &kp BSLH          &kp LBRC  &kp RBRC   &kp PIPE           &to 3      &none
+&none  &kp TILDE  &kp PIPE           &kp QMARK          &kp AMPS          &kp COLON       &kp LEFT_BRACKET  &kp LPAR  &kp RPAR   &kp RIGHT_BRACKET  &kp CARET  &none
+                                     &to 0              &kp LEFT_SHIFT    &kp SPACE       &kp RET           &kp BSPC  &to 2
             >;
         };
 
