@@ -31,10 +31,10 @@
 
         symbols {
             bindings = <
-&none  &kp STAR   &kp HASH           &kp PERCENT        &kp DQT           &kp AT          &kp LT            &kp SQT   &kp GRAVE  &kp GT             &kp SEMI   &none
-&none  &kp TAB    &mt LGUI KP_MINUS  &mt LALT KP_PLUS   &mt LCTRL DOLLAR  &kp KP_EQUAL    &kp BSLH          &kp LBRC  &kp RBRC   &kp PIPE           &to 3      &none
-&none  &kp TILDE  &kp PIPE           &kp QMARK          &kp AMPS          &kp COLON       &kp LEFT_BRACKET  &kp LPAR  &kp RPAR   &kp RIGHT_BRACKET  &kp CARET  &none
-                                     &to 0              &kp LEFT_SHIFT    &kp SPACE       &kp RET           &kp BSPC  &to 2
+&none  &kp STAR   &kp HASH           &kp PERCENT        &kp DQT           &kp AT          &kp LT    &kp SQT           &kp GRAVE          &kp GT    &kp SEMI   &none
+&none  &kp TAB    &mt LGUI KP_MINUS  &mt LALT KP_PLUS   &mt LCTRL DOLLAR  &kp KP_EQUAL    &kp BSLH  &kp LBRC          &kp RBRC           &kp PIPE  &to 3      &none
+&none  &kp TILDE  &kp PIPE           &kp QMARK          &kp AMPS          &kp COLON       &kp LPAR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RPAR  &kp CARET  &none
+                                     &to 0              &kp LEFT_SHIFT    &kp SPACE       &kp RET   &kp BSPC          &to 2
             >;
         };
 
@@ -51,7 +51,7 @@
             bindings = <
 &none  &kp Q  &kp W  &kp E  &kp J       &kp ESCAPE    &kp DOWN  &kp RIGHT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR_ALL  &none
 &none  &kp A  &kp S  &kp D  &kp I       &kp TAB       &kp F2    &kp F4     &kp F5        &kp F11       &kp F12         &none
-&none  &kp Z  &kp X  &kp C  &kp M       &none         &kp UP    &kp LEFT   &none         &none         &to 4           &none
+&none  &kp Z  &kp X  &kp C  &kp M       &kp LALT      &kp UP    &kp LEFT   &none         &none         &to 4           &none
                      &to 0  &kp LSHIFT  &kp SPACE     &kp RET   &kp BSPC   &to 1
             >;
         };
