@@ -44,7 +44,7 @@
                        bindings = <
    &kp Q      &kp W      &kp F        &kp P        &kp B          &kp J    &kp L         &kp U        &kp Y        AS(SEMI)
    &ht LGUI A &ht LALT R &ht LCTRL S  &ht LSHFT T  &kp G          &kp M    &ht LSHFT N   &ht LCTRL E  &ht LALT I   &ht LGUI O
-   &kp X      &kp C      &kp D        &kp V        &kp Z          &kp K    &kp H         &kp COMMA    AS(SLASH)    &ht &caps_word &none
+   &kp X      &kp C      &kp D        &kp V        &kp Z          &kp K    &kp H         &kp COMMA    AS(SLASH)    &caps_word
                          &kp ESC      &lt 1 TAB    &ht DOT SPACE  AS(RET)  &kp BSPC      &td_sym
                        >;
                 };
