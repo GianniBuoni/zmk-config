@@ -25,13 +25,13 @@
         bindings = <&kp>, <&kp>;
       };
       t_caps: tap_dance_t_caps {
-        compatible = "zmk,behavior-tap-dance"l
+        compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&caps_word>, <&ht LSHFT T>;
       };
       n_caps: tap_dance_t_caps {
-        compatible = "zmk,behavior-tap-dance"l
+        compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&caps_word>, <&ht LSHFT N>;
