@@ -31,16 +31,16 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |     |  J  |  L   |  U   |  Y   | SEMI |
-// |  A  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E   |  I   | O    |
-// |  X  |  C  |  D  |  V  |  Z  |     |  H  |  K   | CTRL | META | GUI  |
-//             | ESC | TAB | SPC |     | ENT |  L2  | BSPC |
+// |  Q  |  W  |  F  |  P  |  B  |     |  J  |   L    |  U   |  Y   | SEMI |
+// |  A  |  R  |  S  |  T  |  G  |     |  M  |   N    |  E   |  I   | O    |
+// |  X  |  C  |  D  |  V  |  Z  |     |  H  |   K    | CTRL | META | GUI  |
+//             | ESC | TAB | SPC |     | ENT |  BSPC  |  L2  |
                         display-name = "Base";
                         bindings = <
-   AS(Q) AS(W) AS(F)    AS(P)      AS(B)          AS(J)    AS(L)   AS(U)     AS(Y)     AS(SEMI)
-   AS(A) AS(R) AS(S)    AS(T)      AS(G)          AS(M)    AS(N)   AS(E)     AS(I)     AS(O)
-   AS(X) AS(C) AS(D)    AS(V)      AS(Z)          AS(N)    AS(M)   &kp LCTL  &kp LALT  &kp GUI
-               &kp ESC  &lt 1 TAB  &as DOT SPACE  AS(RET)  &tog 2  &kp BSPC
+   AS(Q) AS(W) AS(F)    AS(P)      AS(B)          AS(J)    AS(L)     AS(U)     AS(Y)     AS(SEMI)
+   AS(A) AS(R) AS(S)    AS(T)      AS(G)          AS(M)    AS(N)     AS(E)     AS(I)     AS(O)
+   AS(X) AS(C) AS(D)    AS(V)      AS(Z)          AS(K)    AS(M)     &kp LCTL  &kp LALT  &kp GUI
+               &kp ESC  &lt 1 TAB  &as DOT SPACE  AS(RET)  &kp BSPC  &tog 2
                         >;
                 };
 
@@ -49,13 +49,13 @@
 // | !     |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |
 // | BT1   | BT2 | BT3 | BT4 | BT5 |     | LFT | DWN |  UP | RGT |     |
 // | BTCLR |     |     |     |     |     |     |     |     |     |     |
-//               | ESC | TAB | SPC |     | ENT |  L2  | BSPC |
+//             | ESC | TAB | SPC |     | ENT |  BSPC  |  L2  |
                         display-name = "Lower";
                         bindings = <
    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans 
    &bt BT_CLR   &trans       &trans       &trans       &trans           &trans    &trans    &trans          &trans    &trans 
-                             &kp ESC      &lt 1 TAB    &as DOT SPACE    AS(RET)   &tog 2     &kp BSPC
+                             &kp ESC      &lt 1 TAB    &as DOT SPACE    AS(RET)   &kp BSPC  &tog 2
                         >;
                 };
 
@@ -71,7 +71,7 @@
    &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT      &kp CARET  &as N1 AMPS  &as N2 KP_MULTIPLY  &kp N3        &kp N0
    AS(MINUS) AS(EQUAL) &kp LBRC  &kp LBKT   &kp LPAR       &kp RPAR   &as N4 RBKT  &as N5 RBRC         &as N7 QMARK  AS(BSLH)
    AS(GRAVE) &trans    &trans    AS(COMMA)  &kp COLON      &kp SEMI   &as N7 GT    &as N8 LCTRL        &as N9 LALT   &trans
-                       &kp ESC   &lt 1 TAB  &as DOT SPACE  AS(RET)    &tog 2       &kp BSPC
+                       &kp ESC   &lt 1 TAB  &as DOT SPACE  AS(RET)    &kp BSPC     &tog 2
                         >;
                 };
 
