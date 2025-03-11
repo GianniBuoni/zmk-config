@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define AS(keycode) &ht LSHFT(keycode) keycode
+#define AS(keycode) &ht LS(keycode) keycode
 
 / {
     chosen {
@@ -48,45 +48,41 @@
 //                 |   ESC  |   TAB   | SPC |     | ENT |  BSPC   |   L2   |
                        display-name = "BASE";
                        bindings = <
-   &kp Q      &kp W      &kp F        &kp P      &kp B          &kp J    &kp L     &kp U        &kp Y        &kp SEMI
-   /*`
+   &kp Q      &kp W      &kp F        &kp P      &kp B          &kp J    &kp L     &kp U        &kp Y        AS(SEMI)
    &ht LGUI A &ht LALT R &ht LCTRL S  &t_caps    &kp G          &kp M    &n_caps   &ht LCTRL E  &ht LALT I   &ht LGUI O
    &kp X      &kp C      &kp D        &kp V      &kp Z          &kp K    &kp H     &kp COMMA    AS(SLASH)    AS(SQT)
                          &kp ESC      &lt 1 TAB  &ht DOT SPACE  AS(RET)  &kp BSPC  &tog 2
-                         */
                        >;
                 };
 
                 lower_layer {
-                        status = "reserved";
 // -----------------------------------------------------------------------------------------
 // | BT1 | BT2 | BT3  | BT4 | BTCLR |     | DWN | RGT  |  !  |  @  |  #  |
 // | GUI | ALT | CTL  | SHF |       |     |     |      |  $  |  %  |  ^  |
 // |     |     |      |     |       |     | UP  | LFT  |  &  |  *  |     |
 //             | ESC  | TAB |  SPC  |     | ENT | BSPC | L2  |
-//                        display-name = "MOD NAV";
-//                        bindings = <
-//   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR     &kp DOWN  &kp RIGHT  &kp EXCL  &kp AT     &kp HASH
-//   &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT    &trans         &trans    &trans     &kp DLLR  &kp PRCNT  &kp CARET
-//   &trans        &trans        &trans        &trans       &trans         &kp UP    &kp LEFT   &kp AMPS  &kp STAR   &trans
-//                               &kp ESC       &lt 1 TAB    &ht DOT SPACE  AS(RET)   &kp BSPC   &none
-//                        >;
+                        display-name = "MOD NAV";
+                        bindings = <
+   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR     &kp DOWN  &kp RIGHT  &kp EXCL  &kp AT     &kp HASH
+   &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT    &trans         &trans    &trans     &kp DLLR  &kp PRCNT  &kp CARET
+   &trans        &trans        &trans        &trans       &trans         &kp UP    &kp LEFT   &kp AMPS  &kp STAR   &trans
+                               &kp ESC       &lt 1 TAB    &ht DOT SPACE  AS(RET)   &kp BSPC   &none
+                        >;
                 };
 
                 raise_layer {
-                        status = "reserved";
 // -----------------------------------------------------------------------------------------
 // |    | <> | ``  | ""  | ''  |     |     |    |  1!  | 2@ | 3# |
 // | -_ | =+ | []  | {}  | ()  |     |     | 0  |  4$  | 5% | 6^ |
 // | ~  |    |     | \|  |  ,  |     |     |    |  7&  | 8* | 9  |
 //           | ESC | TAB | SPC |     | ENT | L2 | BSPC |
-//                        display-name = "SYMBOL";
-//                        bindings = <
-//   &trans     &ht LT GT  &kp GRAVE      &kp DQT        &kp SQT        &trans   &trans    AS(N1)  AS(N2)  AS(N3)
-//   AS(MINUS)  AS(EQUAL)  &ht RBKT LBKT  &ht RBRC LBRC  &ht RPAR LPAR  &trans   &kp N0    AS(N4)  AS(N5)  AS(N6)
-//   &kp TILDE  &trans     &trans         AS(BSLH)       &kp COMMA      &trans   &trans    AS(N7)  AS(N8)  &kp N9
-//                         &to 0          &lt 1 TAB      &ht DOT SPACE  AS(RET)  &kp BSPC  &tog 2
-//                        >;
+                        display-name = "SYMBOL";
+                        bindings = <
+   &trans     &ht LT GT  &kp GRAVE      &kp DQT        &kp SQT        &trans   &trans    AS(N1)  AS(N2)  AS(N3)
+   AS(MINUS)  AS(EQUAL)  &ht RBKT LBKT  &ht RBRC LBRC  &ht RPAR LPAR  &trans   &kp N0    AS(N4)  AS(N5)  AS(N6)
+   &kp TILDE  &trans     &trans         AS(BSLH)       &kp COMMA      &trans   &trans    AS(N7)  AS(N8)  &kp N9
+                         &to 0          &lt 1 TAB      &ht DOT SPACE  AS(RET)  &kp BSPC  &tog 2
+                        >;
                 };
 
                 extra_1 {
