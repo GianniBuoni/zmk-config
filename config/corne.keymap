@@ -78,7 +78,6 @@
 //           | ESC | TAB | SPC |     | ENT | L2 | BSPC |
                         display-name = "SYMBOL";
                         bindings = <
-
    &trans     &ht LT GT  &kp GRAVE      &kp DQT        &kp SQT        &trans   &trans    AS(N1)  AS(N2)  AS(N3)
    AS(MINUS)  AS(EQUAL)  &ht RBKT LBKT  &ht RBRC LBRC  &ht RPAR LPAR  &trans   &kp N0    AS(N4)  AS(N5)  AS(N6)
    &kp TILDE  &trans     &trans         AS(BSLH)       &kp COMMA      &trans   &trans    AS(N7)  AS(N8)  &kp N9
