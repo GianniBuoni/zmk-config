@@ -24,12 +24,12 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
       };
-      t_caps: tap_dance_t_caps {
-        compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&caps_word>, <&ht LSHFT T>;
-      };
+//      t_caps: tap_dance_t_caps {
+//        compatible = "zmk,behavior-tap-dance";
+//        #binding-cells = <0>;
+//        tapping-term-ms = <200>;
+//        bindings = <&caps_word>, <&ht LSHFT T>;
+//      };
       n_caps: tap_dance_n_caps {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
@@ -49,7 +49,7 @@
                         display-name = "BASE";
                         bindings = <
    &kp Q      &kp W      &kp F        &kp P      &kp B          &kp J    &kp L     &kp U        &kp Y        AS(SEMI)
-   &ht LGUI A &ht LALT R &ht LCTRL S  &t_caps    &kp G          &kp M    &n_caps   &ht LCTRL E  &ht LALT I   &ht LGUI O
+   &ht LGUI A &ht LALT R &ht LCTRL S  &ht LSHFT T    &kp G          &kp M    &n_caps   &ht LCTRL E  &ht LALT I   &ht LGUI O
    &kp X      &kp C      &kp D        &kp V      &kp Z          &kp K    &kp H     &kp COMMA    AS(SLASH)    AS(SQT)
                          &kp ESC      &lt 1 TAB  &ht DOT SPACE  AS(RET)  &kp BSPC  &tog 2
                         >;
