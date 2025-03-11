@@ -28,13 +28,13 @@
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&caps_word>, <&ht LSHFT T>;
+        bindings = <&ht LSHFT T>, <&caps_word>;
       };
       n_caps: tap_dance_n_caps {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&caps_word>, <&ht LSHFT N>;
+        bindings = <&ht LSHFT N>, <&caps_word>;
       };
     };
         keymap {
