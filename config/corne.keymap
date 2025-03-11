@@ -30,7 +30,7 @@
         tapping-term-ms = <200>;
         bindings = <&caps_word>, <&ht LSHFT T>;
       };
-      n_caps: tap_dance_t_caps {
+      n_caps: tap_dance_n_caps {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
