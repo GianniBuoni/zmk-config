@@ -63,10 +63,10 @@
 //             | ESC  | TAB |  SPC  |     | ENT | BSPC | L2  |
                         display-name = "MOD NAV";
                         bindings = <
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR     &kp DOWN  &kp RIGHT  &kp EXCL  &kp AT     &kp HASH
-   &kp LGUI     &kp LALT     &kp LCTL     &kp LSHFT    &trans         &trans    &trans     &kp DLLR  &kp PRCNT  &kp CARET
-   &trans       &trans       &trans       &trans       &trans         &kp UP    &kp LEFT   &kp AMPS  &kp STAR   &trans
-                             &kp ESC      &lt 1 TAB    &ht DOT SPACE  AS(RET)   &kp BSPC   &none
+   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR     &kp DOWN  &kp RIGHT  &kp EXCL  &kp AT     &kp HASH
+   &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT    &trans         &trans    &trans     &kp DLLR  &kp PRCNT  &kp CARET
+   &trans        &trans        &trans        &trans       &trans         &kp UP    &kp LEFT   &kp AMPS  &kp STAR   &trans
+                              &kp ESC       &lt 1 TAB    &ht DOT SPACE  AS(RET)   &kp BSPC   &none
                         >;
                 };
 
