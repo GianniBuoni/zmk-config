@@ -39,7 +39,7 @@
                         bindings = <
    AS(Q) AS(W) AS(F)    AS(P)      AS(B)          AS(J)    AS(L)     AS(U)     AS(Y)     AS(SEMI)
    AS(A) AS(R) AS(S)    AS(T)      AS(G)          AS(M)    AS(N)     AS(E)     AS(I)     AS(O)
-   AS(X) AS(C) AS(D)    AS(V)      AS(Z)          AS(K)    AS(M)     &kp LCTL  &kp LALT  &kp GUI
+   AS(X) AS(C) AS(D)    AS(V)      AS(Z)          AS(K)    AS(M)     &kp LCTL  &kp LALT  &kp LGUI
                &kp ESC  &lt 1 TAB  &as DOT SPACE  AS(RET)  &kp BSPC  &tog 2
                         >;
                 };
