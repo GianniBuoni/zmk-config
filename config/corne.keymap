@@ -30,6 +30,12 @@
         tapping-term-ms = <200>;
         bindings = <&sl 2>, <&tog 2>;
       };
+      td_caps: tap_dance_capsword {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&none>, <&caps_word>;
+      };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -44,7 +50,7 @@
                        bindings = <
    &kp Q      &kp W      &kp F        &kp P        &kp B          &kp J    &kp L         &kp U        &kp Y        AS(SEMI)
    &ht LGUI A &ht LALT R &ht LCTRL S  &ht LSHFT T  &kp G          &kp M    &ht LSHFT N   &ht LCTRL E  &ht LALT I   &ht LGUI O
-   &kp X      &kp C      &kp D        &kp V        &kp Z          &kp K    &kp H         &kp COMMA    AS(SLASH)    &caps_word
+   &kp X      &kp C      &kp D        &kp V        &kp Z          &kp K    &kp H         &kp COMMA    AS(SLASH)    &td_caps
                          &kp ESC      &lt 1 TAB    &ht DOT SPACE  AS(RET)  &kp BSPC      &td_sym
                        >;
                 };
@@ -75,7 +81,7 @@
    &trans     &ht LT GT  &kp GRAVE      &kp DQT        &kp SQT        &trans   &trans    AS(N1)  AS(N2)  AS(N3)
    AS(MINUS)  AS(EQUAL)  &ht RBKT LBKT  &ht RBRC LBRC  &ht RPAR LPAR  &trans   &kp N0    AS(N4)  AS(N5)  AS(N6)
    &kp TILDE  &trans     &trans         AS(BSLH)       &kp COMMA      &trans   &trans    AS(N7)  AS(N8)  &kp N9
-                         &to 0          &lt 1 TAB      &ht DOT SPACE  AS(RET)  &kp BSPC  &tog 2
+                         &to 0          &lt 1 TAB      &ht DOT SPACE  &to 0    &kp BSPC  &tog 2
                         >;
                 };
 
